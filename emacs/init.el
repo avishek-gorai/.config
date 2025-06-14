@@ -50,6 +50,8 @@
 				 "\\|^INDEX$\\|-t\\.tex$"
 				 "\\|^\\..+$")))
 
+(add-hook (quote js-mode-hook) (function font-lock-mode))
+
 (add-hook (quote c-mode-common-hook) (function font-lock-mode))
 
 (add-hook (quote sh-mode-hook) (function font-lock-mode))
