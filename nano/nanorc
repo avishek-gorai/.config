@@ -1,0 +1,7 @@
+set autoindent
+set backup
+set backupdir ~/.my_regular_file_backups
+set linenumbers
+set multibuffer
+set tabsize 4
+set tabstospaces
