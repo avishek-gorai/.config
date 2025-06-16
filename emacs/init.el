@@ -43,6 +43,8 @@
 
 (shadow-initialize)
 
+(show-paren-mode)
+
 (with-eval-after-load (quote dired)
   (require (quote dired-x))
   (setq dired-omit-files (concat dired-omit-files
