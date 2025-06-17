@@ -30,6 +30,8 @@
 
 (auto-insert-mode)
 
+(global-auto-revert-mode)
+
 (windmove-default-keybindings)
 (windmove-display-default-keybindings)
 (windmove-delete-default-keybindings)
