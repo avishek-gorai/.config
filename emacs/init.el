@@ -16,8 +16,8 @@
 ;; -*- lexical-binding: t; -*-
 
 (setq custom-file "~/.config/emacs/emacs-custom.el"
-      slime-lisp-implementations (list (list (quote steel-bank-common-lisp)
-                                             (list "sbcl" "--userinit" (expand-file-name "~/.config/sbcl/init.lisp")))))
+      slime-lisp-implementations (quote
+                                  ((clisp ("clisp")))))
 
 (load custom-file)
 
