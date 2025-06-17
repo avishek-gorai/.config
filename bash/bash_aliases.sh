@@ -3,7 +3,6 @@ alias ls='ls --ignore-backups -l'                             \
       cp='cp --interactive --recursive --verbose'             \
       mv='mv --interactive --verbose'                         \
       rmdir='rmdir --verbose'                                 \
-      sbcl='rlwrap sbcl --userinit ~/.config/sbcl/init.lisp'
 
 
 
