@@ -26,8 +26,6 @@
        (w32-register-hot-key [M-tab])
        (w32-register-hot-key [s-])))
 
-(load (expand-file-name "~/.quicklisp/slime-helper.el"))
-
 (auto-insert-mode)
 
 (global-auto-revert-mode)
