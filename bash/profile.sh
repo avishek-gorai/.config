@@ -29,5 +29,5 @@ fi
 
 PATH="$HOME/.qlot/bin:$PATH"
 
-export NEXT_TELEMETRY_DISABLED=1\
+export NEXT_TELEMETRY_DISABLED=1 \
        GNUPGHOME=~/.config/gnupg
