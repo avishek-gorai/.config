@@ -30,4 +30,5 @@ fi
 PATH="$HOME/.qlot/bin:$PATH"
 
 export NEXT_TELEMETRY_DISABLED=1 \
-       GNUPGHOME=~/.config/gnupg
+       GNUPGHOME=~/.config/gnupg \
+       MANPATH=:~/share
