@@ -17,7 +17,7 @@
 
 (setq custom-file "~/.config/emacs/emacs-custom.el"
       slime-lisp-implementations (quote
-                                  ((clisp ("clisp")))))
+                                  ((clisp ("clisp" "-i" "~/.config/clisp-init.lisp")))))
 
 (load custom-file)
 
