@@ -26,6 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+umask 0026
 
 PATH="$HOME/.qlot/bin:$PATH"
 
