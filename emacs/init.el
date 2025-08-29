@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Copyright (C) 2025 by Avishek Gorai
 ;;
 ;; This program is free software: you can redistribute it and/or modify
@@ -13,18 +15,13 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-;; -*- lexical-binding: t; -*-
+
 
 (setq custom-file "~/.config/emacs/emacs-custom.el"
       slime-lisp-implementations (quote
-                                  ((clisp ("clisp" "--disable-readline" "-i" "~/.config/clisp-init.lisp")))))
+                                  ((clisp ("clisp" "-disable-readline" "-i" "~/.config/clisp-init.lisp")))))
 
 (load custom-file)
-
-(cond ((eq system-type (quote windows-nt))
-       (setq w32-lwindow-modifier (quote super))
-       (w32-register-hot-key [M-tab])
-       (w32-register-hot-key [s-])))
 
 (auto-insert-mode)
 
