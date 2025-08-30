@@ -49,6 +49,8 @@
 				 "\\|^INDEX$\\|-t\\.tex$"
 				 "\\|^\\..+$")))
 
+(add-hook (quote prog-mode-hook) (function (lambda () (font-lock-mode -1))))
+
 (add-hook (quote js-mode-hook) (function font-lock-mode))
 
 (add-hook (quote c-mode-common-hook) (function font-lock-mode))
@@ -61,7 +63,6 @@
 (add-hook (quote text-mode-hook) (function flyspell-mode))
 
 (add-hook (quote prog-mode-hook) (function flyspell-prog-mode))
-(add-hook (quote prog-mode-hook) (function (lambda () (font-lock-mode -1))))
 (add-hook (quote prog-mode-hook) (function hs-minor-mode))
 
 (add-hook (quote dired-mode-hook) (function (lambda () (dired-omit-mode 1))))
@@ -92,3 +93,4 @@
 (global-set-key (kbd "C-c c") (function org-capture))
 
 (put (quote downcase-region) (quote disabled) nil)
+(put (quote upcase-region) (quote disabled) nil)
