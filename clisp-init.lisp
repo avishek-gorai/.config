@@ -37,3 +37,5 @@
               (pprint exp)))
      (format t "~%~%")
      (values)))
+
+(load "/usr/share/common-lisp/source/cl-asdf/asdf.lisp")
